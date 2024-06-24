@@ -1,0 +1,46 @@
+body {
+    margin: auto;
+    background-color: purple;
+}
+
+.header {
+    border: white solid 5px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#Jose {
+    margin: 5px;
+    border: black solid 5px;
+    outline: white solid 5px;
+    height: 400px;
+    width: auto;
+}
+
+h1{
+    margin-top: 0px;
+}
+
+h4{
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+.experience{
+    margin: 5px;
+    border: solid black 5px;
+    outline: solid white 5px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+}
+
+li{
+    text-align: left;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 50%){}
