@@ -27,3 +27,8 @@ Thave built easy-to-use digital mapping tools that help field teams access and d
 
 ### Analysis for Planning and Reporting:
 Using mapping software, I've analyzed geographic areas to calculate properties like size and perimeter. This analysis has been crucial for planning purposes and has been presented to stakeholders through clear, informative visual presentations.
+
+![image](https://github.com/Uwttn/portfolio/assets/133266199/50e35e2b-e451-43af-bcdb-ebe9bcdd373f)
+
+### Deployment
+https://uwttn.github.io/portfolio/
