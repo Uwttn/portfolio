@@ -13,6 +13,7 @@ header {
     background-color: black;
     color: white;
     text-align: center;
+
     @media screen and (max-width: 900px) {
         flex-direction: column;
         width: 310px;
@@ -55,13 +56,14 @@ nav {
     margin: 5px;
     margin-left: 0px;
     margin-top: 430px;
+
     a {
         padding: 50px;
         color: white;
     }
 }
 
-h1{
+h1 {
     text-decoration: underline;
     text-align: center;
 }
@@ -79,15 +81,16 @@ h1{
     flex-direction: column;
     width: 75%;
     flex-wrap: wrap;
-@media (max-width: 900px) {
-    margin-top: 570px;
-    margin-left: 5px;
-    flex-direction: column;
-    width: 300px;
-}
+
+    @media (max-width: 900px) {
+        margin-top: 570px;
+        margin-left: 5px;
+        flex-direction: column;
+        width: 300px;
+    }
 }
 
-#education{
+#education {
     text-align: center;
     position: relative;
     margin-left: 330px;
@@ -101,15 +104,16 @@ h1{
     flex-direction: column;
     width: 75%;
     flex-wrap: wrap;
-@media (max-width: 900px) {
-    margin-top: 15px;
-    margin-left: 5px;
-    flex-direction: column;
-    width: 300px;
-}
+
+    @media (max-width: 900px) {
+        margin-top: 15px;
+        margin-left: 5px;
+        flex-direction: column;
+        width: 300px;
+    }
 }
 
-#technical-skills{
+#technical-skills {
     text-align: center;
     position: relative;
     margin-left: 330px;
@@ -123,10 +127,11 @@ h1{
     flex-direction: column;
     width: 75%;
     flex-wrap: wrap;
-@media (max-width: 900px) {
-    margin-top: 15px;
-    margin-left: 5px;
-    flex-direction: column;
-    width: 300px;
-}
+
+    @media (max-width: 900px) {
+        margin-top: 15px;
+        margin-left: 5px;
+        flex-direction: column;
+        width: 300px;
+    }
 }
