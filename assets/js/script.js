@@ -13,27 +13,32 @@ nav[0].innerHTML = `
 // Maps the links on the Navigation Bar from Index
 
 function setLinks() {
-    const homePage = window.location.pathname;
+  const homePage = window.location.pathname;
 
-    let pageMapping;
+  let pageMapping;
 
-    if (homePage === '/' || homePage.includes('index.html')) {
-        pageMapping = {
-            home: './index.html',
-            personalProjects: './assets/pages/personal-projects.html',
-            teamProjects: './assets/pages/team-projects.html'
-        };
-    } else {
-        pageMapping = {
-            home: '../../index.html',
-            personalProjects: './personal-projects.html',
-            teamProjects: './team-projects.html'
-        };
-    }
-    for (const id in pageMapping) {
-        const linkElement = document.getElementById(id);
-        linkElement.href = pageMapping[id];
-    }
+  if (homePage.includes("index.html")) {
+    pageMapping = {
+      home: "./index.html",
+      personalProjects: "./assets/pages/personal-projects.html",
+      teamProjects: "./assets/pages/team-projects.html",
+    };
+  } else {
+    pageMapping = {
+      home: "../../index.html",
+      personalProjects: "./personal-projects.html",
+      teamProjects: "./team-projects.html",
+    };
+  }
+  for (const id in pageMapping) {
+    const linkElement = document.getElementById(id);
+    linkElement.href = pageMapping[id];
+  }
 }
 
 setLinks();
+
+// function that flips the card onclick
+function toggleFlip(card) {
+  card.classList.toggle("flipped");
+}

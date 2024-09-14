@@ -16,16 +16,22 @@ nav {
       display: flex;
       flex-direction: column;
     }
-}
+  }
 
-a {
+  a {
     text-decoration: none;
-}
+  }
 
-li {
+  li {
     list-style-type: none;
     display: flex;
     color: white;
     font-size: large;
   }
 }
+
+.heading {
+  text-align: center;
+}
+
+
