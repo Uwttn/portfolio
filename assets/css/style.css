@@ -1,0 +1,31 @@
+nav {
+  background-color: rgb(0, 166, 255);
+  border-radius: 20px;
+  height: 50px;
+  align-content: center;
+  @media screen and (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    @media screen and (max-width: 700px) {
+      display: flex;
+      flex-direction: column;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+    color: white;
+    font-size: large;
+  }
+}
