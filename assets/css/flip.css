@@ -1,7 +1,11 @@
+:root {
+  --primary-color: #008080;
+  --secondary-color: #d68c45;
+}
 
-content {margin-top: 10px;
+content {
+    margin-top: 10px;
     display: flex;
-    justify-content: flex-end;
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -13,6 +17,7 @@ content {margin-top: 10px;
     cursor: pointer;
   }
   
+
   /* This container is needed to position the front and back side */
   .flip-card-inner {
     position: relative;
@@ -25,7 +30,7 @@ content {margin-top: 10px;
   
   /* Position the front and back side */
   .flip-card-front, .flip-card-back {
-    border-radius: 10px;
+    border-radius: 20px;
     position: absolute;
     width: 100%;
     height: fit-content;
@@ -35,14 +40,12 @@ content {margin-top: 10px;
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
-    background-color: rgb(66, 104, 227);
-    color: white;
+    background-color: var(--primary-color);
   }
   
   /* Style the back side */
   .flip-card-back {
-    background-color: rgb(125, 113, 230);
-    color: white;
+    background-color: var(--primary-color);
     transform: rotateY(180deg);
   }
 
@@ -50,10 +53,26 @@ content {margin-top: 10px;
     transform: rotateY(180deg);
   }
 
+  .flip-card-front:hover {
+ background-color: var(--secondary-color);
+  }
+
+  .flip-card-back:hover{
+    background-color: var(--secondary-color);
+  }
+
 #email{
-    color: white;
+    color: black;
+}
+
+#email:hover {
+  background-color: var(--primary-color);
 }
 
   .contact {
     width: 30px;
   }
+  
+  .contact:hover{
+   background-color: var(--primary-color);
+  } 

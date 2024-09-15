@@ -1,5 +1,10 @@
+:root {
+  --primary-color: #008080;
+  --secondary-color: #ff7f50;
+}
+
 nav {
-  background-color: rgb(0, 166, 255);
+  background-color: var(--primary-color);
   border-radius: 20px;
   height: 50px;
   align-content: center;
@@ -23,10 +28,14 @@ nav {
   }
 
   li {
+    color: black;
     list-style-type: none;
     display: flex;
-    color: white;
     font-size: large;
+  }
+  li:hover {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
   }
 }
 
@@ -34,4 +43,15 @@ nav {
   text-align: center;
 }
 
+content {
+  height: 580px;
+}
 
+footer {
+  background-color: var(--primary-color);
+  height: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+}
