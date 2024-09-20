@@ -6,11 +6,82 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/projects.css">
   </head>
   <body>
     <nav></nav>
 
+    <div class="container">
+      <div class="book">
+        <input type="checkbox" id="c1" />
+        <input type="checkbox" id="c2" />
+        <input type="checkbox" id="c3" />
 
+        <div id="cover">
+          <h1>The Team</h1>
+          <img src="../images/placeholder.png" alt="" />
+        </div>
+        <div class="flip-book">
+          <!-- First Page -->
+          <div class="flip" id="p1">
+            <div class="back">
+              <img src="../images/placeholder.png" alt="" />
+              <p></p>
+              <label class="back-btn" for="c1">Back</label>
+            </div>
+
+            <div class="front">
+              <div>
+                <h1 align="center">About</h1>
+                <p align="center">
+                 Information on the team coming soon...
+                </p>
+              </div>
+               
+              <label class="next-btn" for="c1">Next</label>
+            </div>
+          </div>
+
+          <!-- Second Page -->
+          <div class="flip" id="p2">
+            <div class="back">
+              <img src="../images/placeholder.png" alt="" />
+              <label class="back-btn" for="c2">Back</label>
+            </div>
+
+            <div class="front">
+              <h2>More projects coming soon...</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quisquam corporis quam explicabo, eius obcaecati qui doloribus
+                dolorum repudiandae. Adipisci tempore vero iure minima dolores,
+                quibusdam ratione quasi cupiditate ullam temporibus.
+              </p>
+              <label class="next-btn" for="c2">Next</label>
+            </div>
+          </div>
+
+          <!-- Third Page -->
+          <div class="flip" id="p3">
+            <div class="back">
+              <img src="../images/placeholder.png" />
+              <label class="back-btn" for="c3">Back</label>
+            </div>
+
+            <div class="front">
+              <h2>More projects coming soon...</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quisquam corporis quam explicabo, eius obcaecati qui doloribus
+                dolorum repudiandae. Adipisci tempore vero iure minima dolores,
+                quibusdam ratione quasi cupiditate ullam temporibus.
+              </p>
+              <label class="next-btn" for="c3">Next</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
      

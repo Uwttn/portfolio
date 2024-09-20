@@ -1,7 +1,7 @@
 :root {
   --primary-color: hsla(0, 21%, 82%);
   --other-color: hsla(0, 21%, 82%, 0.655);
-  --secondary-color: #4285f4;
+  --secondary-color: #4286f4;
   --back-color: #212529;
   --rainbow-color: linear-gradient(
     45deg,
@@ -45,16 +45,15 @@ li {
   transition: font-size 0.3s ease;
 }
 li:hover {
-  color: var(--secondary-color);
+  padding: 10px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
   font-size: 1.5rem;
 }
 
 .heading {
   text-align: center;
-}
-
-content {
-  height: 580px;
 }
 
 footer {
@@ -96,4 +95,43 @@ nav::after {
   100% {
     background-position: 0 0;
   }
+}
+
+/* Table */
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+  margin: 50px;
+  height: 100%;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 30px;
+  align-items: center;
+
+  #project {
+    color: white;
+  }
+}
+
+.head {
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+td {
+  border: 2px solid white;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+}
+
+#project-pic {
+  width: 900px;
+  height: 500px;
 }

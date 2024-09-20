@@ -4,40 +4,166 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jose's Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/flip.css" />
   </head>
   <body>
-    
     <nav></nav>
 
-    <content>
-      <div class="flip-card" onclick="toggleFlip(this)">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <h1>Click Me!</h1>
-            <p>
-              Open to working with teams of all sizes and backgrounds to create
-              innovative solutions.
-              <br>
-              <a href="mailto:muchati@icloud.com" id="email">Email Me</a>
-            </p>
-          </div>
-          <div class="flip-card-back">
-            <h1>Jose Muchati</h1>
-            <p>Actively seeking opportunities</p>
-            <a href="https://www.linkedin.com/in/uwttn/">
-              <img class="icon" src="./assets/images/LinkedIn.png" />
-            </a>
-            <a href="https://github.com/Uwttn">
-              <img class="icon" src="./assets/images/github.png" />
-            </a>
+    <div class="container">
+      <section>
+
+        <!-- Card 1 -->
+
+        <div class="flip-card" onclick="toggleFlip(this)">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h2>Jose Muchati</h2>
+              <p>
+                Open to working with teams of all sizes and backgrounds to
+                create innovative solutions.
+              </p>
+            </div>
+            <div class="flip-card-back">
+              <h2>Jose Muchati</h2>
+
+              <a href="https://www.linkedin.com/in/uwttn/">
+                <img class="icon" src="./assets/images/LinkedIn.png" />
+              </a>
+              <a href="https://github.com/Uwttn">
+                <img class="icon" src="./assets/images/github.png" />
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </content>
 
+        <!-- Card 2 -->
+
+        <h1 align="center">Developers I work with</h1>
+        <div class="flip-card" onclick="toggleFlip(this)">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h2>Jordan Reeve</h2>
+              <p>Information on this developer coming soon...</p>
+            </div>
+            <div class="flip-card-back">
+              <h2>Jordan Reeve</h2>
+
+              <a href="#" class="info-container">
+                <img class="icon" src="./assets/images/LinkedIn.png" />
+                <div class="info-text">Under construction</div>
+                <img />
+              </a>
+              <a href="https://github.com/jreeve65">
+                <img class="icon" src="./assets/images/github.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+
+        <div class="flip-card" onclick="toggleFlip(this)">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h2>James Parker</h2>
+              <p>Information on this developer coming soon...</p>
+            </div>
+            <div class="flip-card-back">
+              <h2>James Parker</h2>
+
+              <a href="#" class="info-container">
+                <img class="icon" src="./assets/images/LinkedIn.png" />
+                <div class="info-text">Under construction</div>
+                <img />
+              </a>
+              <a href="https://github.com/JamesWilliamParker">
+                <img class="icon" src="./assets/images/github.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 4 -->
+
+        <div class="flip-card" onclick="toggleFlip(this)">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h2>Breanna Camacho</h2>
+              <p>Information on this developer coming soon...</p>
+            </div>
+            <div class="flip-card-back">
+              <h2>Breanna Camacho</h2>
+              <a href="https://www.linkedin.com/in/breannacamacho/">
+                <img class="icon" src="./assets/images/LinkedIn.png" />
+              </a>
+              <a href="https://github.com/breannacamacho">
+                <img class="icon" src="./assets/images/github.png" /><img />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h1 align="center">Currently working on:</h1>
+        <img id="project-pic" src="./assets/images/tech-blog.png" alt="">
+        <h2 id="project">tech-blog</h2>
+      </section>
+
+      <section>
+        <h1 align="center">Technologies proficiency</h1>
+        <table>
+          <tr>
+            <td class="head">Technologies</td>
+            <td class="head">Description</td>
+          </tr>
+          <tr>
+            <td>HTML/CSS</td>
+            <td>
+              extensive experience working with these, focusing on clean code
+              and styling across browsers.
+            </td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>
+              worked with JavaScript for functionality, including dynamic
+              elements like NavBars, clocks, and JSON-based data structures.
+            </td>
+          </tr>
+          <tr>
+            <td>Node.js</td>
+            <td>
+              worked on backend projects using Node.js, specifically in
+              conjunction with MongoDB and Apollo for GraphQL.
+            </td>
+          </tr>
+          <tr>
+            <td>GraphQL</td>
+            <td>
+              familiar with mutations for creating, updating, and removing
+              entities like users, decks, and cards.
+            </td>
+          </tr>
+          <tr>
+            <td>MongoDB</td>
+            <td>
+              Working on improving skills with this database technology for
+              backend development.
+            </td>
+          </tr>
+          <tr>
+            <td>Git</td>
+            <td>
+              Used GitHub for version control and have implemented functionality
+              on my website, like the flip card with GitHub and LinkedIn logos.
+            </td>
+          </tr>
+        </table>
+      </section>
+    </div>
 
     <script src="./assets/js/script.js"></script>
   </body>

@@ -1,11 +1,12 @@
 :root {
-    --primary-color: hsla(0, 21%, 82%);
-    --secondary-color: #4286f4;
+    --primary-color: #F5F5F5;
+    --secondary-color: #8F8F8F;
     --back-color: #212529;
     --next-btn-color: #cfe2ff;
     --back-btn-color: #fbc886;
 }
 
+/* Entire book */
 .container {
     margin: 0;
     padding: 0;
@@ -20,20 +21,25 @@ input {
   display: none;
 }
 img {
-    width: 100%;
-    height: 100%;
+    width: 500px;
+    height: 350px;
+    border-radius: 20px;
 }
 
 .book {
     display: flex;
-    background-color: green;
-    border: white solid 5px;
+    background-color: #A67B5B;
+    border: rgb(64, 118, 243) solid 5px;
     border-radius: 10px;
 }
 
 #cover {
     width: 700px;
     height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .flip-book {
@@ -71,6 +77,10 @@ p {
     box-sizing: border-box;
     padding: 0 13px;
     box-shadow: inset 20px 0 50px rbga(0,0,0,0.5) 0 2px 5px rgba(0,0,0,.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .back {
@@ -83,6 +93,10 @@ p {
     transform: rotateY(180deg);
     backface-visibility: hidden;
     background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .next-btn {
@@ -91,6 +105,7 @@ p {
     right: 13px;
     cursor: pointer;
     color: black;
+    font-weight: bold;
 }
 
 .next-btn:hover {
@@ -104,7 +119,8 @@ p {
     bottom: 13px;
     right: 13px;
     cursor: pointer;
-    color: #fff;
+    color: black;
+    font-weight: bold;
 }
 
 .back-btn:hover{
@@ -137,3 +153,6 @@ p {
     transform: rotateY(-180deg);
     z-index: 3;
 }
+
+/* TODO: Portrait Mode Layout */
+

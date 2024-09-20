@@ -5,17 +5,16 @@
   --card-hover-color: rgb(163, 235, 163);
 }
 
-content {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
+h1 {
+  color: white;
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
+  margin: 30px;
     background-color: transparent;
     width: 300px;
-    height: 170px;
+    height: 180px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
     cursor: pointer;
   }
@@ -25,7 +24,7 @@ content {
   .flip-card-inner {
     position: relative;
     width: 300px;
-    height: 170px;
+    height: 180px;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
@@ -36,7 +35,7 @@ content {
     border-radius: 20px;
     position: absolute;
     width: 300px;
-    height: 170px;
+    height: 180px;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
     color: black;
@@ -52,6 +51,7 @@ content {
   .flip-card-back {
     background-color: var(--card-color);
     transform: rotateY(180deg);
+    text-align: center;
   }
 
   .flip-card.flipped .flip-card-inner {
@@ -77,10 +77,38 @@ content {
 
   .icon {
     width: 40px;
-    padding-right: 10px;
+    padding: 10px;
     transition: transform 0.3s ease;
   }
   
   .icon:hover{
    transform: scale(2.0);
   } 
+
+/* For when something is still developing */
+
+  .info-container {
+    position: relative;
+    display: inline-block;
+}
+
+.info-text {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    bottom: 125%; /* Position above the hovered element */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.info-container:hover .info-text {
+    visibility: visible;
+    opacity: 1;
+}
