@@ -18,6 +18,7 @@
 
 body {
   background-color: var(--back-color);
+  overflow-x: hidden;
 }
 
 nav {
@@ -101,21 +102,21 @@ nav::after {
 .container {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
 }
 
 section {
-  margin: 50px;
+  margin: 0 30px 0 30px;
   height: 100%;
-  width: 350px;
+  width: 300px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-left: 30px;
   align-items: center;
-
   #project {
     color: white;
   }
+
 }
 
 .head {
@@ -132,6 +133,14 @@ td {
 }
 
 #project-pic {
-  width: 900px;
+  width: 800px;
   height: 500px;
+  @media (max-width: 700px) {
+    width: 450px;
+    height: 250px;
+  }
+}
+
+.devs {
+  color: white;
 }
