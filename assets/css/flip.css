@@ -1,18 +1,21 @@
 :root {
-  --primary-color: #008080;
-  --secondary-color: #d68c45;
+  --stage-color: #ffffff;
+  --highlight-color: #4285F4;
+  --card-color: #f4f2ec;
+  --card-hover-color: rgb(163, 235, 163);
 }
 
 content {
     margin-top: 10px;
     display: flex;
+    justify-content: center;
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     background-color: transparent;
     width: 300px;
-    height: 500px;
+    height: 170px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
     cursor: pointer;
   }
@@ -21,8 +24,8 @@ content {
   /* This container is needed to position the front and back side */
   .flip-card-inner {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 300px;
+    height: 170px;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
@@ -32,20 +35,22 @@ content {
   .flip-card-front, .flip-card-back {
     border-radius: 20px;
     position: absolute;
-    width: 100%;
-    height: fit-content;
+    width: 300px;
+    height: 170px;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
+    color: black;
   }
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
-    background-color: var(--primary-color);
+    background-color: var(--card-color);
+    transition: transform 0.3s ease;
   }
   
   /* Style the back side */
   .flip-card-back {
-    background-color: var(--primary-color);
+    background-color: var(--card-color);
     transform: rotateY(180deg);
   }
 
@@ -54,25 +59,28 @@ content {
   }
 
   .flip-card-front:hover {
- background-color: var(--secondary-color);
+ background-color: var(--card-hover-color);
   }
 
   .flip-card-back:hover{
-    background-color: var(--secondary-color);
+    background-color: var(--card-hover-color);
   }
 
 #email{
     color: black;
+    transition: font-size 0.3s ease;
 }
 
 #email:hover {
-  background-color: var(--primary-color);
+  font-size: 1.5rem;
 }
 
-  .contact {
-    width: 30px;
+  .icon {
+    width: 40px;
+    padding-right: 10px;
+    transition: transform 0.3s ease;
   }
   
-  .contact:hover{
-   background-color: var(--primary-color);
+  .icon:hover{
+   transform: scale(2.0);
   } 
