@@ -1,7 +1,9 @@
 :root {
-    --primary-color: hsla(0, 21%, 82%, 0.655);
-    --secondary-color: #4285f4;
+    --primary-color: hsla(0, 21%, 82%);
+    --secondary-color: #4286f4;
     --back-color: #212529;
+    --next-btn-color: #cfe2ff;
+    --back-btn-color: #fbc886;
 }
 
 .container {
@@ -12,7 +14,6 @@
     justify-content: center;
     align-items: center;
     font-family: "Roboto", sans-serif;
-    background: linear-gradient(90deg , var(--back-color) 100%);
 }
 
 input {
@@ -92,12 +93,24 @@ p {
     color: black;
 }
 
+.next-btn:hover {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--next-btn-color);
+}
+
 .back-btn {
     position: absolute;
     bottom: 13px;
     right: 13px;
     cursor: pointer;
     color: #fff;
+}
+
+.back-btn:hover{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--back-btn-color);
 }
 
 #p1 {

@@ -1,5 +1,6 @@
 :root {
-  --primary-color: hsla(0, 21%, 82%, 0.655);
+  --primary-color: hsla(0, 21%, 82%);
+  --other-color: hsla(0, 21%, 82%, 0.655);
   --secondary-color: #4285f4;
   --back-color: #212529;
   --rainbow-color: linear-gradient(
@@ -21,7 +22,7 @@ body {
 
 nav {
   display: grid;
-  background-color: var(--primary-color);
+  background-color: var(--other-color);
   height: 50px;
 }
 
