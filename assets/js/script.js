@@ -5,8 +5,8 @@ const nav = document.getElementsByTagName("nav");
 nav[0].innerHTML = `
 <ul>
 <a id="home"><li>Home</li></a>
-<a id="personalProjects"><li>Personal projects</li></a>
-<a id="teamProjects"><li>Team projects</li></a>
+<a id="personal"><li>Personal projects</li></a>
+<a id="team"><li>Team projects</li></a>
 </ul>
 `;
 
@@ -20,14 +20,14 @@ function setLinks() {
   if (homePage.includes("index.html")) {
     pageMapping = {
       home: "./index.html",
-      personalProjects: "./pages/personal-projects.html",
-      teamProjects: "./pages/team-projects.html",
+      personal: "./personal.html",
+      team: "./team.html",
     };
   } else {
     pageMapping = {
-      home: "../index.html",
-      personalProjects: "./personal-projects.html",
-      teamProjects: "./team-projects.html",
+      home: "./index.html",
+      personal: "./personal.html",
+      team: "./team.html",
     };
   }
   for (const id in pageMapping) {
