@@ -20,12 +20,12 @@ function setLinks() {
   if (homePage.includes("index.html")) {
     pageMapping = {
       home: "./index.html",
-      personalProjects: "./assets/pages/personal-projects.html",
-      teamProjects: "./assets/pages/team-projects.html",
+      personalProjects: "./pages/personal-projects.html",
+      teamProjects: "./pages/team-projects.html",
     };
   } else {
     pageMapping = {
-      home: "../../index.html",
+      home: "../index.html",
       personalProjects: "./personal-projects.html",
       teamProjects: "./team-projects.html",
     };
