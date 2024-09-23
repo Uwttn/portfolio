@@ -17,7 +17,7 @@
 }
 
 body {
-  background-color: var(--back-color);
+  background-color: var(--back-color) !important;
   overflow-x: hidden;
 }
 
@@ -34,18 +34,26 @@ ul {
   align-items: center;
 }
 
-a {
+.navTab {
   text-decoration: none;
+  color: black !important;
+  font-size: large;
+  transition: font-size 0.3s ease;
 }
 
-li {
+.navTab:hover {
+  color: white !important;
+  font-size: 1.5rem;
+}
+
+.navLi {
   color: black;
   list-style-type: none;
   display: flex;
   font-size: large;
   transition: font-size 0.3s ease;
 }
-li:hover {
+.navLi:hover {
   padding: 10px;
   border-radius: 10px;
   background-color: black;
