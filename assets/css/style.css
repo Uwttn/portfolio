@@ -26,6 +26,9 @@ nav {
   background-color: var(--other-color);
   height: 50px;
  position: relative;
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: column;
 }
 
 ul {

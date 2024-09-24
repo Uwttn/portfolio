@@ -14,11 +14,44 @@
     justify-content: center;
     align-items: center;
     font-family: "Roboto", sans-serif;
-    @media (max-width: 700px) {
-        padding-top: 50%;
+
+    @media (min-width: 900px) {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
+        flex-direction: row;
+        .book {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        #jose {
+            width: 200px;
+            height: 200px;
+        }
+        
+        #cover {
+            width: 350px;
+            height: 500px;
+        }
+
+        .flip-book { 
+            width: 350px;
+            height: 500px;
+        }
+        
+        .site {
+            width: 340px;
+            height: 210px;
+        }
+    }
+
+    @media (max-width: 850px) {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding-top: 5%;
         .book {
             display: flex;
             flex-wrap: wrap;
@@ -88,6 +121,18 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
+        }
+
+        #p1 {
+            z-index: 3;
+        }
+        
+        #p2 {
+            z-index: 2;
+        }
+        
+        #p3 {
+            z-index: 1;
         }
         
         #c1:checked ~ .flip-book #p1 {
