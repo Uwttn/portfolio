@@ -8,13 +8,110 @@
 
 /* Entire book */
 .container {
-    margin: 0;
-    padding: 0;
+    position: relative;
     height:100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: "Roboto", sans-serif;
+    @media (max-width: 700px) {
+        padding-top: 30%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        .book {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        #jose {
+            width: 200px;
+            height: 200px;
+        }
+        
+        #cover {
+            width: 350px;
+            height: 500px;
+        }
+
+        .flip-book { 
+            width: 350px;
+            height: 500px;
+        }
+        
+        .site {
+            width: 340px;
+            height: 210px;
+        }
+
+        .flip {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform-origin: top;
+            transform-style: preserve-3d; 
+            transform: rotateX(0deg);
+            transition: .5s;
+            color: #000;
+        }
+
+        .front {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: var(--primary-color);
+            box-sizing: border-box;
+            padding: 0 13px;
+            box-shadow: inset 20px 0 50px rbga(0,0,0,0.5) 0 2px 5px rgba(0,0,0,.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 99;
+            transform: rotateX(180deg);
+            backface-visibility: hidden;
+            background-color: var(--secondary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        #c1:checked ~ .flip-book #p1 {
+            transform: rotateX(180deg);
+            z-index: 1;
+        }
+        #c2:checked ~ .flip-book #p2 {
+            transform: rotateX(180deg);
+            z-index: 2;
+        }
+        #c3:checked ~ .flip-book #p3 {
+            transform: rotateX(180deg);
+            z-index: 3;
+        }
+        
+        .card {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .card-container {
+            height: fit-content;
+        }
+    }
 }
 
 input {
@@ -62,7 +159,7 @@ input {
 .flip {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     transform-origin: left;
@@ -174,25 +271,6 @@ p {
   
   .icon:hover {
     transform: scale(2);
-  }
-
-  .card-container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: var(--primary-color);
-    box-sizing: border-box;
-    padding: 0 13px;
-    box-shadow: inset 20px 0 50px rbga(0,0,0,0.5) 0 2px 5px rgba(0,0,0,.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding-bottom: 50px;
   }
 
 .repo {

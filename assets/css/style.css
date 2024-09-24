@@ -25,6 +25,7 @@ nav {
   display: grid;
   background-color: var(--other-color);
   height: 50px;
+ position: relative;
 }
 
 ul {
@@ -167,4 +168,30 @@ td {
 
 .current {
   color:white;
+}
+
+.info-container2 {
+  position: relative;
+  display: inline-block;
+}
+
+.info-text2 {
+  visibility: hidden;
+  width: 200px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  position: absolute;
+  bottom: 90%; /* Position above the hovered element */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.info-container2:hover .info-text2 {
+  visibility: visible;
+  opacity: 1;
 }
