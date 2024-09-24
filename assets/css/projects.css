@@ -52,6 +52,7 @@
         flex-wrap: wrap;
         flex-direction: row;
         padding-top: 5%;
+        perspective: 1000px;
         .book {
             display: flex;
             flex-wrap: wrap;
@@ -147,15 +148,6 @@
             transform: rotateX(180deg);
             z-index: 3;
         }
-        
-        .card {
-            display: flex;
-            flex-direction: row;
-        }
-
-        .card-container {
-            height: fit-content;
-        }
     }
 }
 
@@ -234,6 +226,7 @@ p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    backface-visibility: hidden;
 }
 
 .back {
