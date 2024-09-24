@@ -29,6 +29,11 @@ input {
     width: 680px;
     height: 420px;
     border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.site:hover {
+    transform: scale(1.05);
 }
 
 .book {
@@ -187,4 +192,18 @@ p {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
+    padding-bottom: 50px;
+  }
+
+.repo {
+    transition: font-size 0.3s ease;
+}
+
+  .repo:hover {
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    overflow: hidden;
   }
