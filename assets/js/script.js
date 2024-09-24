@@ -42,8 +42,3 @@ setLinks();
 function toggleFlip(card) {
   card.classList.toggle("flipped");
 }
-
-const footer = document.getElementsByTagName("footer");
-footer[0].innerHTML = `
-
-`
