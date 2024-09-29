@@ -72,7 +72,7 @@ Want to improve this project? Great! We encourage contribution to make this proj
 # Questions
 ## Contact Me
 
-- [Jose Muchati'sPortfolio] (https://uwttn.github.io/portfolio/)
+- [Jose Muchati'sPortfolio](https://uwttn.github.io/portfolio/)
 - [GitHub](https://github.com/uwttn)
 - [LinkedIn](https://www.linkedin.com/in/uwttn)
 - [Email](muchati@icloud.com)
