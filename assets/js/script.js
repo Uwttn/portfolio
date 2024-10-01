@@ -5,8 +5,8 @@ const nav = document.getElementsByTagName("nav");
 nav[0].innerHTML = `
 <ul>
 <a id="home" class="navTab"><li class="navLi">Home</li></a>
-<a id="personal" class="navTab"><li class="navLi">Personal projects</li></a>
-<a id="team" class="navTab"><li class="navLi">Team projects</li></a>
+<a id="personal" class="navTab"><li class="navLi">Bio</li></a>
+<a id="team" class="navTab"><li class="navLi">Projects</li></a>
 </ul>
 `;
 
