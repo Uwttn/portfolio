@@ -18,7 +18,7 @@
 </details>
 
 # portfolio
-- A portfolio where I am putting all the post bootcamp projects
+- A portfolio to showcase my work
 
 # Initial setup
 
@@ -72,11 +72,9 @@ Want to improve this project? Great! We encourage contribution to make this proj
 # Questions
 ## Contact Me
 
-<img src="./assets/images/portfolio.png">
-
 - [Jose Muchati's Portfolio](https://uwttn.github.io/portfolio/)
 - [GitHub](https://github.com/uwttn)
 - [LinkedIn](https://www.linkedin.com/in/uwttn)
-- [Email](muchati@icloud.com)
+- [Email](mailto:muchati@icloud.com)
 
 
