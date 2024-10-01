@@ -157,6 +157,8 @@ input {
 
 #jose {
  border-radius: 20px;
+width: 250px;
+height: auto;
 }
 
 .site {
@@ -178,7 +180,7 @@ input {
 }
 
 #cover {
-    width: 500px;
+    width: 400px;
     height: 700px;
     display: flex;
     align-items: center;
@@ -187,7 +189,7 @@ input {
 }
 
 .flip-book {
-    width: 500px;
+    width: 400px;
     height: 700px;
     position: relative;
     perspective: 1500px;

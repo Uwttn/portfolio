@@ -109,15 +109,11 @@ nav::after {
 .cardContainer {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  gap: 100px;
   @media (max-width: 900px) { 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    #project-pic {
-      width: 340px;
-      height: 210px;
-    }
   }
 }
 
@@ -149,50 +145,4 @@ td {
   text-align: center;
   border-radius: 5px;
   color: white;
-}
-
-#project-pic {
-  position: relative;
-    width: 680px;
-    height: 420px;
-    border-radius: 20px;
-    transition: transform 0.3s ease;
-    @media (max-width: 1350px) {
-      width: 340px;
-      height: 210px;
-    }
-}
-
-#project-pic:hover {
-  transform: scale(1.1);
-}
-
-.current {
-  color:white;
-}
-
-.info-container2 {
-  position: relative;
-  display: inline-block;
-}
-
-.info-text2 {
-  visibility: hidden;
-  width: 200px;
-  background-color: black;
-  color: white;
-  text-align: center;
-  border-radius: 5px;
-  padding: 10px;
-  position: absolute;
-  bottom: 90%; /* Position above the hovered element */
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.info-container2:hover .info-text2 {
-  visibility: visible;
-  opacity: 1;
 }
