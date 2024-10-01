@@ -5,8 +5,7 @@ const nav = document.getElementsByTagName("nav");
 nav[0].innerHTML = `
 <ul>
 <a id="home" class="navTab"><li class="navLi">Home</li></a>
-<a id="personal" class="navTab"><li class="navLi">Bio</li></a>
-<a id="team" class="navTab"><li class="navLi">Projects</li></a>
+<a id="team" class="navTab"><li class="navLi">Team Projects</li></a>
 </ul>
 `;
 
@@ -20,13 +19,11 @@ function setLinks() {
   if (homePage.includes("index.html")) {
     pageMapping = {
       home: "./index.html",
-      personal: "./personal.html",
       team: "./team.html",
     };
   } else {
     pageMapping = {
       home: "./index.html",
-      personal: "./personal.html",
       team: "./team.html",
     };
   }

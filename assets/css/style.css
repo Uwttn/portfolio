@@ -18,7 +18,6 @@
 
 body {
   background-color: var(--back-color) !important;
-  overflow-x: hidden;
 }
 
 nav {
@@ -70,15 +69,6 @@ ul {
   text-align: center;
 }
 
-footer {
-  background-color: var(--primary-color);
-  height: 100px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  border-radius: 20px;
-}
-
 nav::before,
 nav::after {
   content: "";
@@ -116,7 +106,7 @@ nav::after {
 }
 
 /* Table */
-.container {
+.cardContainer {
   display: flex;
   justify-content: space-between;
   gap: 30px;
@@ -142,6 +132,10 @@ section {
   #project {
     color: white;
   }
+}
+
+#jose {
+  border-radius: 20px;
 }
 
 .head {

@@ -7,15 +7,13 @@
     <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/flip.css" />
+    <link rel="stylesheet" href="./assets/css/projects.css" />
   </head>
   <body>
     <nav></nav>
 
-    <div class="container">
+    <div class="cardContainer">
       <section>
-
-        <!-- Card 1 -->
-
         <div class="flip-card" onclick="toggleFlip(this)">
           <div class="flip-card-inner">
             <div class="flip-card-front">
@@ -37,79 +35,118 @@
             </div>
           </div>
         </div>
+      </section>
 
-        <!-- Card 2 -->
+      <section>
+        <div class="container">
+          <div class="book">
+            <input type="checkbox" id="c1" />
+            <input type="checkbox" id="c2" />
+            <input type="checkbox" id="c3" />
 
-        <h2 align="center" class="current">Currently working with:</h2>
-        <div class="flip-card" onclick="toggleFlip(this)">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <h2>Jordan Reeve</h2>
-              <p>Information on this developer coming soon...</p>
+            <div id="cover">
+              <h1>Jose Muchati</h1>
+              <h2 align="center">About Me</h2>
+              <img src="./assets/images/jose.png" id="jose">
+              <p align="center">
+                I'm a passionate software developer focusing on front-end
+                development with a strong foundation in HTML, CSS, and
+                JavaScript. I enjoy creating clean, efficient code that powers
+                user-friendly applications, and I'm always looking to expand my
+                skills.
+              </p>
             </div>
-            <div class="flip-card-back">
-              <h2>Jordan Reeve</h2>
 
-              <a href="#" class="info-container">
-                <img class="icon" src="./assets/images/LinkedIn.png" />
-                <div class="info-text">Under construction</div>
-                <img />
-              </a>
-              <a href="https://github.com/jreeve65">
-                <img class="icon" src="./assets/images/github.png" />
-              </a>
-            </div>
-          </div>
-        </div>
+            <div class="flip-book">
+              <!-- First Page -->
+              <div class="flip" id="p1">
+                <div class="back">
+                  <a href="https://uwttn.github.io/payroll/">
+                  <img
+                    src="./assets/images/projects/payroll.png"
+                    alt=""
+                    class="site"
+                  />
+                </a>
+                <h1>Payroll Tracker</h1>
+                  <p>
+                    This is a simple, minimalistic payroll tracker.
+                  </p>
+                  <label class="back-btn" for="c1">Back</label>
+                </div>
 
-        <!-- Card 3 -->
+                <div class="front">
+                  <a href="https://www.youtube.com/watch?v=eP6vSEuVqBo&t=9s">
+                  <img
+                    src="./assets/images/projects/README.png"
+                    alt=""
+                    class="site"
+                  /></a>
+                  <div>
+                    <h1 align="center">README Generator</h1>
+                    <p>
+                      This is a project that generates a README for purpose of publishing it on GitHub.
+                    </p>
+                  </div>
+                  <label class="next-btn" for="c1">Next</label>
+                </div>
+              </div>
 
-        <div class="flip-card" onclick="toggleFlip(this)">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <h2>James Parker</h2>
-              <p>Information on this developer coming soon...</p>
-            </div>
-            <div class="flip-card-back">
-              <h2>James Parker</h2>
+              <!-- Second Page -->
+              <div class="flip" id="p2">
+                <div class="back">
+                  <img
+                    src="./assets/images/placeholder.png"
+                    alt=""
+                    class="site"
+                  />
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum voluptate ipsa consectetur temporibus minima, illum quasi, sint in laborum amet deleniti illo modi enim aliquam? Adipisci voluptates facere porro sapiente.
+                  </p>
+                  <label class="back-btn" for="c2">Back</label>
+                </div>
 
-              <a href="https://www.linkedin.com/in/jamesparker954/">
-                <img class="icon" src="./assets/images/LinkedIn.png" />
-              </a>
-              <a href="https://github.com/JamesWilliamParker">
-                <img class="icon" src="./assets/images/github.png" />
-              </a>
-            </div>
-          </div>
-        </div>
+                <div class="front">
+                  <a href="https://uwttn.github.io/weather/">
+                    <img
+                      src="./assets/images/projects/weather.png"
+                      alt=""
+                      class="site"
+                    /></a>
+                    <h1>Cloud Compass</h1>
+                  <p>
+                    This is a website that uses an API to handle weather request from specific cities.
+                  </p>
+                  <label class="next-btn" for="c2">Next</label>
+                </div>
+              </div>
 
-        <!-- card 4 -->
+              <!-- Third Page -->
+              <div class="flip" id="p3">
+                <div class="back">
+                  <img src="./assets/images/placeholder.png" class="site" />
+                  <label class="back-btn" for="c3">Back</label>
+                </div>
 
-        <div class="flip-card" onclick="toggleFlip(this)">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <h2>Breanna Camacho</h2>
-              <p>Information on this developer coming soon...</p>
-            </div>
-            <div class="flip-card-back">
-              <h2>Breanna Camacho</h2>
-              <a href="https://www.linkedin.com/in/breannacamacho/">
-                <img class="icon" src="./assets/images/LinkedIn.png" />
-              </a>
-              <a href="https://github.com/breannacamacho">
-                <img class="icon" src="./assets/images/github.png" /><img />
-              </a>
+                <div class="front">
+                  <img src="./assets/images/placeholder.png" class="site" />
+                  <h2>More projects coming soon...</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quisquam corporis quam explicabo, eius obcaecati qui
+                    doloribus dolorum repudiandae. Adipisci tempore vero iure
+                    minima dolores, quibusdam ratione quasi cupiditate ullam
+                    temporibus.
+                  </p>
+                  <label class="next-btn" for="c3">Next</label>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
       <section>
-       
-      </section>
-
-      <section>
-        <h1 align="center">Technology proficiency</h1>
+        <h1 align="center" style="color: white;">Technology proficiency</h1>
         <table>
           <tr>
             <td class="head">Technologies</td>
