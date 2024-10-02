@@ -1,37 +1,37 @@
-// Creates Navigation Bar on all pages
+// // Creates Navigation Bar on all pages
 
-const nav = document.getElementsByTagName("nav");
+// const nav = document.getElementsByTagName("nav");
 
-nav[0].innerHTML = `
-<ul>
-<a id="home" class="navTab"><li class="navLi">Home</li></a>
-<a id="team" class="navTab"><li class="navLi">Team Projects</li></a>
-</ul>
-`;
+// nav[0].innerHTML = `
+// <ul>
+// <a id="home" class="navTab"><li class="navLi">Home</li></a>
+// <a id="team" class="navTab"><li class="navLi">Team Projects</li></a>
+// </ul>
+// `;
 
-// Maps the links on the Navigation Bar from Index
+// // Maps the links on the Navigation Bar from Index
 
-function setLinks() {
-  const homePage = window.location.pathname;
+// function setLinks() {
+//   const homePage = window.location.pathname;
 
-  let pageMapping;
+//   let pageMapping;
 
-  if (homePage.includes("index.html")) {
-    pageMapping = {
-      home: "./index.html",
-      team: "./team.html",
-    };
-  } else {
-    pageMapping = {
-      home: "./index.html",
-      team: "./team.html",
-    };
-  }
-  for (const id in pageMapping) {
-    const linkElement = document.getElementById(id);
-    linkElement.href = pageMapping[id];
-  }
-}
+//   if (homePage.includes("index.html")) {
+//     pageMapping = {
+//       home: "./index.html",
+//       team: "./team.html",
+//     };
+//   } else {
+//     pageMapping = {
+//       home: "./index.html",
+//       team: "./team.html",
+//     };
+//   }
+//   for (const id in pageMapping) {
+//     const linkElement = document.getElementById(id);
+//     linkElement.href = pageMapping[id];
+//   }
+// }
 
 setLinks();
 
