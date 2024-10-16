@@ -18,7 +18,7 @@
 </details>
 
 # portfolio
-- A portfolio to showcase my work
+- A portfolio to showcase my work, skills and experiences
 
 # Initial setup
 
@@ -46,9 +46,6 @@
 
 1. [Clone the project repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
-# Usage
-- This command-line application helps you generate a high-quality README.md file for your software project. It guides you through entering information and automatically populates the README with content.
-
 # Languages
 HTML, CSS, JavaScript
 
@@ -58,16 +55,6 @@ Want to improve this project? Great! We encourage contribution to make this proj
 - Suggest feautures: Do you have an idea for a new feature? Share it with us!
 - Contribute code: If you have programming skills, feel free to contribute code to the project.
 - Provide feedback: Your feedback on the project is valuable. Let us know what you think!
-
-# Tests
-- Here are some tests you can perform to ensure the application works as expected:
-1. Basic Functionality: Verify that the application prompts for all required information and generates a README with the expected sections.
-2. Title: Enter a project title and confirm it appears as the title of the README.
-3. Content: Enter information for each section and check if it populates the corresponding section in the README.
-4. License: Choose a license from the list and verify that the appropriate badge and license notice are added to the README.
-5. Contact: Enter a GitHub username and email address, and confirm they appear with links in the "Questions" section.
-6. Table of Contents Links: Open the generated README and click on the links in the Table of Contents. They should link to the corresponding sections.
-
 
 # Questions
 ## Contact Me
