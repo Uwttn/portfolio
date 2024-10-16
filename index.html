@@ -1,211 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jose's Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/normalize.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/flip.css" />
-    <link rel="stylesheet" href="./assets/css/projects.css" />
-  </head>
-  <body>
-    <nav></nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
 
-    <div class="cardContainer">
-      <section>
-        <div class="flip-card" onclick="toggleFlip(this)">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <h2>Jose Muchati</h2>
+<body>
+<nav>
+  <ul>
+    <a href="./index.html" class="navTab"><li class="navLi">Home</li></a>
+    <a href="./assets/pages/contact.html" class="navTab"><li class="navLi">Contact</li></a>
+  </ul>
+</nav>
+
+    <div class="container">
+        <div class="book">
+          <input type="checkbox" id="c1" />
+          <input type="checkbox" id="c2" />
+          <input type="checkbox" id="c3" />
+
+          <div id="cover">
+            <img src="./assets/images/jose.png">
+            <h1 align="center">Jose Muchati</h1>
+            <p align="center">
+              I am web developer and a data analyst with the passion to keep learning. I like to code and problem-solve technology-related issues. Overall, one of my biggest strengths is adaptability. And I truly value work ethic and dependability, not only for myself, but from employers and co-workers as well. Overall, I am looking for a career path that aligns with my values while fostering growth and innovation.
+            </p>
+          </div>
+
+          <div class="flip-book">
+            <!-- First Page -->
+            <div class="flip" id="p1">
+              <div class="back">
+                <a href="https://www.youtube.com/watch?v=eP6vSEuVqBo&t=18s">
+                <img
+                  src="./assets/images/projects/README.png"
+                  alt=""
+                  class="site"
+                />
+              </a>
+              <!-- Header 2 -->
+              <h1>readme-generator</h1>
+                <p>
+                  This is a readme-generator is command-line application that dynamically generates a professional README.md file while using the user's input through the inquirer npm package.
+                </p>
+                <label class="back-btn" for="c1">Back</label>
+              </div>
+
+              <div class="front">
+                <a href="https://flipit-57ng.onrender.com/">
+                <img
+                  src="./assets/images/projects/FlipIt.png"
+                  alt=""
+                  class="site"
+                /></a>
+                <div>
+                  <!-- Header 1 -->
+                  <h1 align="center">FlipIt</h1>
+                  <p>
+                    This project is an interactive MERN Stack Single-Page Application. In context, it is scalable and user-focused. It utilizes React in the front-end and server using GraphQL, Node.js and Express.js. In addition, it includes JWT authentication for the user(s) to login securely and it even protects sensitive API key information on the server.
+                  </p>
+                </div>
+                <label class="next-btn" for="c1">Next</label>
+              </div>
+            </div>
+
+            <!-- Second Page -->
+            <div class="flip" id="p2">
+              <div class="back">
+                <a href="#">
+                <img
+                  src="./assets/images/projects/payroll.png"
+                  alt=""
+                  class="site"
+                /></a>
+                <!-- Header 4 -->
+                <h1>payroll</h1>
+                <p>
+                  This application enables a payroll manager to view and manage employee payroll data. It runs in the browser dynamically updated with HTML, CSS, and JavaScript. In addition, it has a clean and polished, responsive user interface while adapting to multiple screen sizes.
+                </p>
+                <label class="back-btn" for="c2">Back</label>
+              </div>
+
+              <div class="front">
+                <a href="#">
+                  <img
+                    src="./assets/images/projects/logo-maker.png"
+                    alt=""
+                    class="site"
+                  /></a>
+                  <!-- Header 3 -->
+                  <h1>logo-maker</h1>
+                <p>
+                 This application is related to Object-Oriented Programming (OOP). The application prompts the user to select a color and shape, while providing the text for the logo, and saving it as an SVG file. 
+                </p>
+                <label class="next-btn" for="c2">Next</label>
+              </div>
+            </div>
+
+            <!-- Third Page -->
+            <div class="flip" id="p3">
+              <div class="back">
+                <a href="#">
+                <img src="./assets/images/projects/blog.png" class="site" />
+              </a>
+              <!-- Header 6 -->
+              <h1>blog</h1>
               <p>
-                Open to working with teams of all sizes and backgrounds to
-                create innovative solutions.
+                This is a two-page website where users can input and view blog posts. It implements light and dark mode toggle, while using the Document Object Model (DOM) to set the stage for more advance tasks. On the other hand, this is still a <u>work in progress</u>.
               </p>
-            </div>
-            <div class="flip-card-back">
-              <h2>Jose Muchati</h2>
-
-              <a href="https://www.linkedin.com/in/uwttn/">
-                <img class="icon" src="./assets/images/LinkedIn.png">
-              </a>
-              <a href="https://github.com/Uwttn">
-                <img class="icon" src="./assets/images/github.png">
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="container">
-          <div class="book">
-            <input type="checkbox" id="c1" />
-            <input type="checkbox" id="c2" />
-            <input type="checkbox" id="c3" />
-
-            <div id="cover">
-              <h1 align="center">About Me</h1>
-              <h2>Jose Muchati</h2>
-              <img src="./assets/images/jose.png" id="jose">
-              <p align="center">
-                I'm a passionate software developer focusing on front-end
-                development with a strong foundation in HTML, CSS, and
-                JavaScript. I enjoy creating clean, efficient code that powers
-                user-friendly applications, and I'm always looking to expand my
-                skills.
-              </p>
-            </div>
-
-            <div class="flip-book">
-              <!-- First Page -->
-              <div class="flip" id="p1">
-                <div class="back">
-                  <a href="https://uwttn.github.io/payroll/">
-                  <img
-                    src="./assets/images/projects/payroll.png"
-                    alt=""
-                    class="site"
-                  />
-                </a>
-                <h1>Payroll Tracker</h1>
-                  <p>
-                    This is a simple, minimalistic payroll tracker.
-                  </p>
-                  <label class="back-btn" for="c1">Back</label>
-                </div>
-
-                <div class="front">
-                  <a href="https://flipit-57ng.onrender.com/">
-                  <img
-                    src="./assets/images/projects/FlipIt.png"
-                    alt=""
-                    class="site"
-                  /></a>
-                  <div>
-                    <h1 align="center">FlipIt</h1>
-                    <p>
-                      This is a Flashcard app to study. It handles secure user-input through OAuth-2 authentication, which allows to add, update, delete and query flashcards.
-                    </p>
-                  </div>
-                  <label class="next-btn" for="c1">Next</label>
-                </div>
+                <label class="back-btn" for="c3">Back</label>
               </div>
 
-              <!-- Second Page -->
-              <div class="flip" id="p2">
-                <div class="back">
-                  <a href="https://www.youtube.com/watch?v=eP6vSEuVqBo&t=9s">
-                  <img
-                    src="./assets/images/projects/README.png"
-                    alt=""
-                    class="site"
-                  /></a>
-                  <h1>README Generator</h1>
-                  <p>
-                    This is a project that generates a README for purpose of publishing it on GitHub.
-                  </p>
-                  <label class="back-btn" for="c2">Back</label>
-                </div>
-
-                <div class="front">
-                  <a href="https://uwttn.github.io/weather/">
-                    <img
-                      src="./assets/images/projects/weather.png"
-                      alt=""
-                      class="site"
-                    /></a>
-                    <h1>Weather Dashboard</h1>
-                  <p>
-                    This is a website that uses an API to handle weather request from specific cities.
-                  </p>
-                  <label class="next-btn" for="c2">Next</label>
-                </div>
-              </div>
-
-              <!-- Third Page -->
-              <div class="flip" id="p3">
-                <div class="back">
-                  <a href="#">
-                  <img src="./assets/images/placeholder.png" class="site" />
-                </a>
-                  <label class="back-btn" for="c3">Back</label>
-                </div>
-
-                <div class="front">
-                  <a href="https://www.youtube.com/watch?v=ysztsrmtZpM&t=3s">
-                  <img src="./assets/images/projects/logo-maker.png" class="site" />
-                </a>
-                  <h1>Logo-Maker</h1>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Quisquam corporis quam explicabo, eius obcaecati qui
-                    doloribus dolorum repudiandae. Adipisci tempore vero iure
-                    minima dolores, quibusdam ratione quasi cupiditate ullam
-                    temporibus.
-                  </p>
-                  <label class="next-btn" for="c3">Next</label>
-                </div>
+              <div class="front">
+                <a href="#">
+                <img src="./assets/images/projects/weather.png" class="site" />
+              </a>
+              <!-- Header 5 -->
+                <h1>weather</h1>
+                <p>
+                  This is a weather dashboard that runs in the browser and dynamically features updated HTML and CSS. It retrieves weather data for specific cities utilizing the <a href="https://openweathermap.org/forecast5">open weather API</a>.
+                </p>
+                <label class="next-btn" for="c3">Next</label>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      
-      <section>
-        <h1 align="center" style="color: white;">Technology proficiency</h1>
-        <table>
-          <tr>
-            <td class="head">Technologies</td>
-            <td class="head">Description</td>
-          </tr>
-          <tr>
-            <td>HTML/CSS</td>
-            <td>
-              extensive experience working with these, focusing on clean code
-              and styling across browsers.
-            </td>
-          </tr>
-          <tr>
-            <td>JavaScript</td>
-            <td>
-              worked with JavaScript for functionality, including dynamic
-              elements like NavBars, clocks, and JSON-based data structures.
-            </td>
-          </tr>
-          <tr>
-            <td>Node.js</td>
-            <td>
-              worked on backend projects using Node.js, specifically in
-              conjunction with MongoDB and Apollo for GraphQL.
-            </td>
-          </tr>
-          <tr>
-            <td>GraphQL</td>
-            <td>
-              familiar with mutations for creating, updating, and removing
-              entities like users, decks, and cards.
-            </td>
-          </tr>
-          <tr>
-            <td>MongoDB</td>
-            <td>
-              Working on improving skills with this database technology for
-              backend development.
-            </td>
-          </tr>
-          <tr>
-            <td>Git</td>
-            <td>
-              Used GitHub for version control and have implemented functionality
-              on my website, like the flip card with GitHub and LinkedIn logos.
-            </td>
-          </tr>
-        </table>
-      </section>
-    </div>
+</body>
 
-    <script src="./assets/js/script.js"></script>
-  </body>
 </html>

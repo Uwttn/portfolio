@@ -1,0 +1,98 @@
+:root {
+    --primary-color: hsla(0, 21%, 82%);
+    --other-color: hsla(0, 21%, 82%, 0.655);
+    --secondary-color: #4286f4;
+    --back-color: #212529;
+    --rainbow-color: linear-gradient(
+      45deg,
+      red,
+      blue,
+      green,
+      yellow,
+      #e11d74,
+      black,
+      #ffff00,
+      #aa0000
+    );
+  }
+
+  body {
+    background-color: black;
+  }
+
+  nav {
+    display: grid;
+    background-color: var(--other-color);
+    width: 100%;
+    height: 50px;
+   position: relative;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    align-items: center;
+  }
+
+  .navTab {
+    text-decoration: none;
+    color: black !important;
+    font-size: large;
+    transition: font-size 0.3s ease;
+  }
+  
+  .navTab:hover {
+    color: white !important;
+    font-size: 1.5rem;
+  }
+  
+  .navLi {
+    color: black;
+    list-style-type: none;
+    display: flex;
+    font-size: large;
+    transition: font-size 0.3s ease;
+  }
+  .navLi:hover {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  nav::before,
+nav::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  background: var(--rainbow-color);
+  background-size: 400%;
+  width: 100%;
+  height: 60px;
+  z-index: -1;
+  animation: animate 25s linear infinite;
+}
+
+nav::after {
+  filter: blur(25px);
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
