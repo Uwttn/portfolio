@@ -58,7 +58,7 @@ Want to improve this project? Great! We encourage contribution to make this proj
 
 ## Contact Me
 
-- [Jose Muchati's Portfolio](https://uwttn.github.io/portfolio/)
+- [Jose's Portfolio](https://uwttn.github.io/portfolio/)
 - [GitHub](https://github.com/uwttn)
 - [LinkedIn](https://www.linkedin.com/in/uwttn)
 - [Email](mailto:josemuchati@outlook.com)
