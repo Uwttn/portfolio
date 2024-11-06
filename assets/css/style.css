@@ -8,7 +8,7 @@
 
 /* Entire book */
 .background {
-  background: url('../images/Wallpaper.jpeg') center center fixed;
+  background: url('../images/wallpaper1.jpeg') center center fixed;
   background-size: cover;
   overflow: scroll;
 }
