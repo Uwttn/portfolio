@@ -56,12 +56,11 @@ Want to improve this project? Great! We encourage contribution to make this proj
 - Contribute code: If you have programming skills, feel free to contribute code to the project.
 - Provide feedback: Your feedback on the project is valuable. Let us know what you think!
 
-# Questions
 ## Contact Me
 
 - [Jose Muchati's Portfolio](https://uwttn.github.io/portfolio/)
 - [GitHub](https://github.com/uwttn)
 - [LinkedIn](https://www.linkedin.com/in/uwttn)
-- [Email](mailto:muchati@icloud.com)
+- [Email](mailto:josemuchati@outlook.com)
 
 

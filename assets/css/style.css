@@ -7,6 +7,12 @@
 }
 
 /* Entire book */
+.background {
+  background: url('../images/Wallpaper.jpeg') center center fixed;
+  background-size: cover;
+  overflow: scroll;
+}
+
 .container {
   position: relative;
   height:100vh;
@@ -114,6 +120,7 @@ display: none;
   background-color: #A67B5B;
   border: rgb(64, 118, 243) solid 5px;
   border-radius: 10px;
+  width: auto;
 }
 
 #cover {
