@@ -8,13 +8,13 @@
   
   /* Entire book */
   .background {
-    background: url('../images/backgrounds/wallpaper.png') center center fixed;
-    background-size: cover;
+    background: url('../images/backgrounds/wallpaper.png') center fixed;
+    background-size: auto;
   }
   
   .container {
     position: relative;
-    height:100vh;
+    height:fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
