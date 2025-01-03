@@ -7,10 +7,6 @@
 }
 
 /* Entire book */
-.background {
-  background: url('../images/backgrounds/wallpaper.png') center center fixed;
-  background-size: cover;
-}
 
 .container {
   position: relative;
@@ -38,6 +34,7 @@ display: none;
 
 .book {
   display: flex;
+  position: relative;
   background-color: #A67B5B;
   border: rgb(64, 118, 243) solid 5px;
   border-radius: 10px;
