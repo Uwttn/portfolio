@@ -1,64 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/normalize.css">
-    <link rel="stylesheet" href="./assets/css/nav.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/nav.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/mobile.css" media="(max-width: 500px)"/>
+  </head>
 
-<body>
+  <body>
+    <nav>
+      <ul>
+        <a href="./index.html" class="navTab"
+          ><li class="navLi">Deployed Projects</li></a
+        >
+        <a href="./assets/pages/about.html" class="navTab"
+          ><li class="navLi">About</li></a
+        >
+      </ul>
+    </nav>
 
-<nav>
-  <ul>
-    <a href="./index.html" class="navTab"><li class="navLi">Deployed Projects</li></a>
-    <a href="./assets/pages/about.html" class="navTab"><li class="navLi">About</li></a>
-  </ul>
-</nav>
-<div class="background">
-    <div class="container">
+    <div class="background">
+      <div class="container">
         <div class="book">
           <input type="checkbox" id="c1" />
           <input type="checkbox" id="c2" />
           <input type="checkbox" id="c3" />
 
-          <div id="cover">
-           
-          </div>
+          <div id="cover"></div>
 
           <div class="flip-book">
             <!-- First Page -->
             <div class="flip" id="p1">
               <div class="back">
                 <a href="https://www.youtube.com/watch?v=eP6vSEuVqBo&t=18s">
-                <img
-                  src="./assets/images/projects/README.png"
-                  alt=""
-                  class="site"
-                />
-              </a>
-              <!-- Header 2 -->
-              <h1>readme-generator</h1>
+                  <img
+                    src="./assets/images/projects/README.png"
+                    alt=""
+                    class="site"
+                  />
+                </a>
+                <!-- Header 2 -->
+                <h1>readme-generator</h1>
                 <p>
-                  This is a readme-generator is command-line application that dynamically generates a professional README.md file while using the user's input through the inquirer npm package.
+                  This is a readme-generator is command-line application that
+                  dynamically generates a professional README.md file while
+                  using the user's input through the inquirer npm package.
                 </p>
                 <label class="back-btn" for="c1">Back</label>
               </div>
 
               <div class="front">
                 <a href="https://flipit-h6ss.onrender.com/">
-                <img
-                  src="./assets/images/projects/FlipIt.png"
-                  alt=""
-                  class="site"
+                  <img
+                    src="./assets/images/projects/FlipIt.png"
+                    alt=""
+                    class="site"
                 /></a>
                 <div>
                   <!-- Header 1 -->
                   <h1 align="center">FlipIt</h1>
                   <p>
-                    This project is an interactive MERN Stack Single-Page Application. In context, it is scalable and user-focused. It utilizes React in the front-end and server using GraphQL, Node.js and Express.js. In addition, it includes JWT authentication for the user(s) to login securely and it even protects sensitive API key information on the server.
+                    This project is an interactive MERN Stack Single-Page
+                    Application. In context, it is scalable and user-focused. It
+                    utilizes React in the front-end and server using GraphQL,
+                    Node.js and Express.js. In addition, it includes JWT
+                    authentication for the user(s) to login securely and it even
+                    protects sensitive API key information on the server.
                   </p>
                 </div>
                 <label class="next-btn" for="c1">Next</label>
@@ -69,15 +79,19 @@
             <div class="flip" id="p2">
               <div class="back">
                 <a href="https://uwttn.github.io/payroll/">
-                <img
-                  src="./assets/images/projects/payroll.png"
-                  alt=""
-                  class="site"
+                  <img
+                    src="./assets/images/projects/payroll.png"
+                    alt=""
+                    class="site"
                 /></a>
                 <!-- Header 4 -->
                 <h1>payroll</h1>
                 <p>
-                  This application enables a payroll manager to view and manage employee payroll data. It runs in the browser dynamically updated with HTML, CSS, and JavaScript. In addition, it has a clean and polished, responsive user interface while adapting to multiple screen sizes.
+                  This application enables a payroll manager to view and manage
+                  employee payroll data. It runs in the browser dynamically
+                  updated with HTML, CSS, and JavaScript. In addition, it has a
+                  clean and polished, responsive user interface while adapting
+                  to multiple screen sizes.
                 </p>
                 <label class="back-btn" for="c2">Back</label>
               </div>
@@ -88,11 +102,14 @@
                     src="./assets/images/projects/logo-maker.png"
                     alt=""
                     class="site"
-                  /></a>
-                  <!-- Header 3 -->
-                  <h1>logo-maker</h1>
+                /></a>
+                <!-- Header 3 -->
+                <h1>logo-maker</h1>
                 <p>
-                 This application is related to Object-Oriented Programming (OOP). The application prompts the user to select a color and shape, while providing the text for the logo, and saving it as an SVG file. 
+                  This application is related to Object-Oriented Programming
+                  (OOP). The application prompts the user to select a color and
+                  shape, while providing the text for the logo, and saving it as
+                  an SVG file.
                 </p>
                 <label class="next-btn" for="c2">Next</label>
               </div>
@@ -102,24 +119,36 @@
             <div class="flip" id="p3">
               <div class="back">
                 <a href="https://uwttn.github.io/blog/">
-                <img src="./assets/images/projects/blog.png" class="site" />
-              </a>
-              <!-- Header 6 -->
-              <h1>blog</h1>
-              <p>
-                This is a two-page website where users can input and view blog posts. It implements light and dark mode toggle, while using the Document Object Model (DOM) to set the stage for more advance tasks. On the other hand, this is a beginner project and I think I can make it better using newer technologies.
-              </p>
+                  <img src="./assets/images/projects/blog.png" class="site" />
+                </a>
+                <!-- Header 6 -->
+                <h1>blog</h1>
+                <p>
+                  This is a two-page website where users can input and view blog
+                  posts. It implements light and dark mode toggle, while using
+                  the Document Object Model (DOM) to set the stage for more
+                  advance tasks. On the other hand, this is a beginner project
+                  and I think I can make it better using newer technologies.
+                </p>
                 <label class="back-btn" for="c3">Back</label>
               </div>
 
               <div class="front">
                 <a href="https://uwttn.github.io/weather/">
-                <img src="./assets/images/projects/weather.png" class="site" />
-              </a>
-              <!-- Header 5 -->
+                  <img
+                    src="./assets/images/projects/weather.png"
+                    class="site"
+                  />
+                </a>
+                <!-- Header 5 -->
                 <h1>weather</h1>
                 <p>
-                  This is a weather dashboard that runs in the browser and dynamically features updated HTML and CSS. It retrieves weather data for specific cities utilizing the <a href="https://openweathermap.org/forecast5">open weather API</a>.
+                  This is a weather dashboard that runs in the browser and
+                  dynamically features updated HTML and CSS. It retrieves
+                  weather data for specific cities utilizing the
+                  <a href="https://openweathermap.org/forecast5"
+                    >open weather API</a
+                  >.
                 </p>
                 <label class="next-btn" for="c3">Next</label>
               </div>
@@ -128,7 +157,5 @@
         </div>
       </div>
     </div>
-
-</body>
-
+  </body>
 </html>
