@@ -12,8 +12,7 @@
   position: relative;
   height:100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+justify-content: center;
   font-family: "Roboto", sans-serif;
 }
 
@@ -23,7 +22,7 @@ display: none;
 
 .site {
   width: 380px;
-  height: auto;
+  height: 250px;
   border-radius: 20px;
   transition: transform 0.3s ease;
 }
@@ -48,6 +47,7 @@ display: none;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  border-radius: 10px;
 }
 
 .flip-book {
@@ -55,6 +55,7 @@ display: none;
   height: 700px;
   position: relative;
   perspective: 1500px;
+  border-radius: 10px;
 }
 
 .flip {
@@ -84,13 +85,13 @@ p {
   left: 0;
   background-color: var(--primary-color);
   box-sizing: border-box;
-  padding: 0 13px;
   box-shadow: inset 20px 0 50px rgba(0,0,0,0.5) 0 2px 5px rgba(0,0,0,.5);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   backface-visibility: hidden;
+  border-radius: 0 10px 10px 0;
 }
 
 .back {
@@ -107,6 +108,7 @@ p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  border-radius: 10px 0 0 10px;
 }
 
 .next-btn, .back-btn {

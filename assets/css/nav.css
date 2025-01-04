@@ -19,15 +19,12 @@
   body {
     background: url('../images/backgrounds/wallpaper.png');
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
   }
   
   nav {
     display: grid;
     background-color: var(--other-color);
-    width: 100%;
+    width: 110%;
   }
 
   ul {
@@ -67,7 +64,7 @@ nav::after {
   position: absolute;
   background: var(--rainbow-color);
   background-size: 400%;
-  width: 100%;
+  width: 110%;
   height: 60px;
   z-index: -1;
   animation: animate 25s linear infinite;
