@@ -17,31 +17,33 @@
   }
 
   body {
-    background: url('../images/backgrounds/wallpaper.png') center center fixed;
+    background: url('../images/backgrounds/wallpaper.png');
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
   
   nav {
     display: grid;
     background-color: var(--other-color);
+    width: 100%;
   }
 
   ul {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
   }
 
   .navTab {
     text-decoration: none;
     color: black;
     font-size: large;
-    transition: font-size 0.3s ease;
+    font-weight: bold;
   }
   
   .navTab:hover {
     color: white;
-    font-size: 1.5rem;
   }
   
   .navLi {
@@ -50,6 +52,7 @@
     font-size: large;
     transition: font-size 0.3s ease;
   }
+
   .navLi:hover {
     padding: 10px;
     border-radius: 10px;
@@ -62,7 +65,6 @@ nav::before,
 nav::after {
   content: "";
   position: absolute;
-  top: -4px;
   background: var(--rainbow-color);
   background-size: 400%;
   width: 100%;

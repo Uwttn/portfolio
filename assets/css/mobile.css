@@ -7,15 +7,16 @@
 }
 
 /* Entire book */
+
 .container {
-height: fit-content;
-margin-top: 5%;
+  height: min-content;
+  margin-top: 5%;
+  align-self: center;
 }
 
 .book {
- position: relative;
-  flex-wrap: wrap;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .flip {
