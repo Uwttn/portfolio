@@ -11,7 +11,7 @@
 .container {
   position: relative;
   height:fit-content;
-  margin: 5%;
+  margin: 5%;  
   width: 100%;
   display: flex;
 justify-content: center;
