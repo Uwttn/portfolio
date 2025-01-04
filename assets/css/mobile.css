@@ -9,9 +9,7 @@
 /* Entire book */
 
 .container {
- height: fit-content;
-  margin: 5%;
-  width: 100%;
+  align-self: center;
 }
 
 .book {

@@ -10,7 +10,9 @@
 
 .container {
   position: relative;
-  height:100vh;
+  height:fit-content;
+  margin: 5%;
+  width: 100%;
   display: flex;
 justify-content: center;
   font-family: "Roboto", sans-serif;
