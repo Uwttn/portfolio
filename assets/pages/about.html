@@ -7,8 +7,16 @@
     <link rel="stylesheet" href="../../assets/css/normalize.css" />
     <link rel="stylesheet" href="../../assets/css/nav.css" />
     <link rel="stylesheet" href="../..//assets/css/style.css" />
-    <link rel="stylesheet" href="../../assets/css/tablet.css" media="(min-width: 850px)"/>
-    <link rel="stylesheet" href="../../assets/css/mobile.css" media="(max-width: 500px)"/>
+    <link
+      rel="stylesheet"
+      href="../../assets/css/tablet.css"
+      media="(min-width: 850px)"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/css/mobile.css"
+      media="(max-width: 500px)"
+    />
   </head>
 
   <body>
@@ -17,130 +25,117 @@
         <a href="../../index.html" class="navTab"
           ><li class="navLi">Deployed Projects</li></a
         >
-        <a href="./about.html" class="navTab"
-          ><li class="navLi">About</li></a
-        >
+        <a href="./about.html" class="navTab"><li class="navLi">About</li></a>
       </ul>
     </nav>
 
-      <div class="background">
-        <div class="container">
-          <div class="book">
-            <input type="checkbox" id="c1" />
-            <input type="checkbox" id="c2" />
-            <input type="checkbox" id="c3" />
-  
-            <div id="cover"></div>
-  
-            <div class="flip-book">
+    <div class="background">
+      <div class="container">
+        <div class="book">
+          <input type="checkbox" id="c1" />
+          <input type="checkbox" id="c2" />
+          <input type="checkbox" id="c3" />
 
-              <!-- First Page -->
-              <div class="flip" id="p1">
-                <div class="back">
-                  <a href="#">
-                    <img
-                      src="../images/comingSoon.jpeg"
-                      alt=""
-                      class="site"
-                    />
-                  </a>
-                  <!-- Header 2 -->
-                  <h1>Open Source Project 1</h1>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis sint voluptas, eligendi laborum perspiciatis rerum itaque quod, assumenda provident consectetur saepe, fugiat doloribus eius tempora! Deserunt reiciendis tenetur ea in!
-                  </p>
-                  <label class="back-btn" for="c1">Back</label>
-                </div>
-  
-                <div class="front">
-                  <a href="https://github.com/Uwttn">
-                    <img
-                      src="../images/jose.png"
-                      alt=""
-                      class="site"
-                  /></a>
-                  <div>
-                    <!-- Header 1 -->
-                    <h1 align="center">About Me</h1>
-                    <p>
-                      I am web developer with the passion to keep learning. I like to code
-                      and problem-solve technology-related issues. Overall, one of my
-                      biggest strengths is adaptability. And I truly value work ethic and
-                      dependability, not only for myself, but from employers and co-workers
-                      as well. Overall, I am looking for a career path that aligns with my
-                      values while fostering growth and innovation.
-                    </p>
-                  </div>
-                  <label class="next-btn" for="c1">Next</label>
-                </div>
+          <div id="cover"></div>
+
+          <div class="flip-book">
+            <!-- First Page -->
+            <div class="flip" id="p1">
+              <div class="back">
+                <a href="https://www.tensorflow.org/">
+                  <img src="https://www.gstatic.com/devrel-devsite/prod/vda41147226ae308b24384f785d31d739107d2716272d99cd11c490ff3892954d/tensorflow/images/lockup.svg" alt="TensorFlow thumbnail" class="site" />
+                </a>
+                <!-- Header 2 -->
+                <p>
+                  TensorFlow is an ecosystem, or framework, for Machine Learning. It uses datasets and complex models across multiple GPUs or TPUs. It processes language, such as generating text, analyzing sentiment, and translating. Overall, it is use to create, train, and deploy machine learning models. I recently signed the Contributor's License Agreement on Jan. 20, 2024. Will update on contributions as I gain experience.
+                </p>
+                <label class="back-btn" for="c1">Back</label>
               </div>
-  
-              <!-- Second Page -->
-              <div class="flip" id="p2">
-                <div class="back">
-                  <a href="#">
-                    <img
-                      src="../images/comingSoon.jpeg"
-                      alt=""
-                      class="site"
-                  /></a>
-                  <!-- Header 4 -->
-                  <h1>Open Source Project 3</h1>
+
+              <div class="front">
+                <a href="https://github.com/Uwttn">
+                  <img src="../images/jose.png" alt="" class="site"
+                /></a>
+                <div>
+                  <!-- Header 1 -->
+                  <h1 align="center">About Me</h1>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod itaque minus similique aperiam perferendis provident amet non voluptatem suscipit minima, magni, recusandae architecto ut nobis voluptate maxime facere omnis numquam.
+                    I am a web developer with a passion for learning. I like to code and problem-solve technology-related issues. Overall, one of my biggest strengths is adaptability. I value my work ethic and dependability for myself, my employers, and my co-workers. I am looking for a career path that aligns with my values while fostering growth and innovation. And I love, not only learning, but also contributing to open source.
                   </p>
-                  <label class="back-btn" for="c2">Back</label>
                 </div>
-  
-                <div class="front">
-                  <a href="#">
-                    <img
-                      src="../images/comingSoon.jpeg"
-                      alt=""
-                      class="site"
-                  /></a>
-                  <!-- Header 3 -->
-                  <h1>Open Source Project 2</h1>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum nam neque, vel repudiandae officia cumque odit recusandae sit, eaque obcaecati voluptatibus temporibus aliquam atque. Veritatis quibusdam quidem beatae labore sed?
-                  </p>
-                  <label class="next-btn" for="c2">Next</label>
-                </div>
+                <label class="next-btn" for="c1">Next</label>
               </div>
-  
-              <!-- Third Page -->
-              <div class="flip" id="p3">
-                <div class="back">
-                  <a href="#">
-                    <img src="../images/comingSoon.jpeg" class="site" />
-                  </a>
-                  <!-- Header 6 -->
-                  <h1>Open Source Project 6</h1>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga similique corrupti voluptas aliquid deserunt saepe quo sint facere exercitationem enim? Ea quisquam consequuntur hic omnis eveniet aliquid perspiciatis facere saepe.
-                  </p>
-                  <label class="back-btn" for="c3">Back</label>
-                </div>
-  
-                <div class="front">
-                  <a href="#">
-                    <img
-                      src="../images/comingSoon.jpeg"
-                      class="site"
-                    />
-                  </a>
-                  <!-- Header 5 -->
-                  <h1>Open Source Project 4</h1>
-                  <p>
-                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore hic explicabo distinctio maxime, minus ullam sint vel provident dolor eaque ipsa voluptatem cupiditate praesentium sed doloremque quibusdam fugiat esse quisquam!
-                  </p>
-                  <label class="next-btn" for="c3">Next</label>
-                </div>
+            </div>
+
+            <!-- Second Page -->
+            <div class="flip" id="p2">
+              <div class="back">
+                <a href="#">
+                  <img src="../images/comingSoon.jpeg" alt="" class="site"
+                /></a>
+                <!-- Header 4 -->
+                <h1>Open Source Project 3</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
+                  itaque minus similique aperiam perferendis provident amet non
+                  voluptatem suscipit minima, magni, recusandae architecto ut
+                  nobis voluptate maxime facere omnis numquam.
+                </p>
+                <label class="back-btn" for="c2">Back</label>
+              </div>
+
+              <div class="front">
+                <a href="#">
+                  <img src="../images/comingSoon.jpeg" alt="" class="site"
+                /></a>
+                <!-- Header 3 -->
+                <h1>Open Source Project 2</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum
+                  nam neque, vel repudiandae officia cumque odit recusandae sit,
+                  eaque obcaecati voluptatibus temporibus aliquam atque.
+                  Veritatis quibusdam quidem beatae labore sed?
+                </p>
+                <label class="next-btn" for="c2">Next</label>
+              </div>
+            </div>
+
+            <!-- Third Page -->
+            <div class="flip" id="p3">
+              <div class="back">
+                <a href="#">
+                  <img src="../images/comingSoon.jpeg" class="site" />
+                </a>
+                <!-- Header 6 -->
+                <h1>Open Source Project 6</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                  similique corrupti voluptas aliquid deserunt saepe quo sint
+                  facere exercitationem enim? Ea quisquam consequuntur hic omnis
+                  eveniet aliquid perspiciatis facere saepe.
+                </p>
+                <label class="back-btn" for="c3">Back</label>
+              </div>
+
+              <div class="front">
+                <a href="#">
+                  <img src="../images/comingSoon.jpeg" class="site" />
+                </a>
+                <!-- Header 5 -->
+                <h1>Open Source Project 4</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Labore hic explicabo distinctio maxime, minus ullam sint vel
+                  provident dolor eaque ipsa voluptatem cupiditate praesentium
+                  sed doloremque quibusdam fugiat esse quisquam!
+                </p>
+                <label class="next-btn" for="c3">Next</label>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
     <script src="../js/script.js"></script>
   </body>
